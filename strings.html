@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>	Strings in Javascript </title>
+</head>
+<meta charset="utf-8">
+<body>
+	<script>
+		var str = "Javascript";
+		var answer = str.length;	//Always counting start 1
+		// length();	--->	calculate length of the string
+		document.write(answer);
+		document.write("<br/>");
+
+		var answer = str.charAt(4);		//Starts with 0
+		//To show the 4th index number character
+		document.write(answer);
+		document.write("<br/>");
+
+		var answer = str.charCodeAt(4);
+		//To show the character ascii value
+		document.write(answer);
+		document.write("<br/>");
+
+		var answer = str.indexOf("s");
+		//To give the string character index number
+		document.write(answer);
+		document.write("<br/>");
+
+		var str = new String("Javascript");
+		var answer = str.localeCompare("ava");
+		//localeCompare show if your given string is available in declared string then true(1)/false(-1)
+		document.write("localeCompare first: " + answer);
+		document.write("<br/>");		
+	</script>
+
+</body>
+</html>

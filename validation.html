@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Validation(Javascript) </title>
+</head>
+<meta charset="utf-8">
+<body>
+
+	<form name="myform" onsubmit="return validation()">
+		USERNAME: <input type="text" value="" id="user"><span id="username"></span><br/><br/>
+		PASSWORD: <input type="password" value="" id="pass"><span id="password"></span><br/><br/>
+		<input type="submit" value="Submit">		
+	</form>
+
+	<script>
+		function validation() {
+			var un = document.getElementById("user").value;
+			var ps = document.getElementById("pass").value;
+			if (un == "") {
+				document.getElementById("username").innerHTML = "Please fill the username";
+				return false;
+			}
+			if (ps == "") {
+				document.getElementById("password").innerHTML = "Please fill the password";
+				return false;
+			}
+			else{
+				alert("Done");
+				return true;
+			}
+		}
+	</script>
+
+</body>
+</html>

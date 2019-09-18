@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Events in Javascript </title>
+</head>
+<meta charset="utf-8">
+<body>
+
+	<button onclick="func();"> Onclick Event </button><br/><br/>
+	<!-- This event will called when click the button -->
+
+	<button onmouseover="func();"> OnMouseOver </button><br/><br/>
+	<!-- This event will called when cursor go to the button -->
+
+	<button onmousedown="func();"> OnMouseDown </button><br/><br/>
+	<!-- This event will called when mouse pressed the button -->
+	<!-- ECMA ES6: Logic is when you click somewhere in the button so button goes down -->
+
+	<button onmouseout="func();"> OnMouseOut </button><br/><br/>
+	<!-- This event will called when mouse goes outside the button -->
+	<script>
+		function func() {
+			document.write("Welcome to Javascript Events");
+		}
+	</script>
+
+</body>
+</html>

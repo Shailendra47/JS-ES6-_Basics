@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Dialog Boxes </title>
+</head>
+<meta charset="utf-8">
+<body>
+	<!-- Confirm Dialog box -->
+	<input type="button" name="btn" value="OK" onclick="confirmation()"/><br/><br/>
+	<!-- Prompt Dialog box -->
+	<input type="button" name="btn1" value="Done" onclick="fun()"/>
+	<script>
+		//Confirm Dialog box script
+		function confirmation() {
+			var obj = confirm("You want to see my website click ok button");
+			if (obj) {
+				alert("Welcome to CodeFighter Academy");
+				window.location = "C:/xampp/htdocs/web_projects/Bootstrap4/index.html"
+			}
+			else{
+				alert("Sorry! something went wrong");
+			}
+		}
+		//Prompt Dialog box script
+		function fun() {
+			var str = prompt("Hi! my name is Shailendra singh deo what's your name","");
+			alert("Nice to meet you "+ str +" !");
+		}
+	</script>
+</body>
+</html>

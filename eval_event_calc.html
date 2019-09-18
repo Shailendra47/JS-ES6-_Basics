@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Calculator </title>
+</head>
+<meta charset="utf-8">
+<body>
+
+	<form name="example">
+		<input type="text" name="calculator" id="txt1"/>
+		<input type="button" name="btn1" value="Calculate" onclick="cal()"/>
+		<input type="reset" name="btn2" value="Reset"/>
+		Answer:<input type="text" name="answer" id="txt2"/>
+	</form>
+
+	<script>
+		function cal() {
+			document.getElementById('txt2').value = eval(document.getElementById('txt1').value);
+			
+		}
+	</script>
+	
+</body>
+</html>
+
