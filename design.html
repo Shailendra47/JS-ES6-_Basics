@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Calculator </title>
+</head>
+
+<script src="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+
+<script src="https://kit.fontawesome.com/5da368dd82.js"></script>
+
+<meta charset="utf-8">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body>
+
+	<div class="container col-lg-12 col-md-6 col-12">
+		<form class="form-group">
+			<input type="text" class="form-control" id="txtInput">
+		</form>
+		<table>
+			<tr>
+				<td><!-- 1.Button -->
+					<button type="button" class="btn btn-secondary" onclick="insert('Rad')">Rad</button>
+				</td>
+				<td><!-- 2.Button -->
+					<button type="button" class="btn btn-secondary" onclick="insert('Deg')">Deg</button>
+				</td>
+				<td><!-- 3.Button -->
+					<button type="button" class="btn btn-secondary" onclick="insert('x!')">x!</button>
+				</td>
+				<td><!-- 4.Button -->
+					<button type="button" class="btn btn-secondary" onclick="insert('(')">(</button>
+				</td>
+				<td><!-- 5.Button -->
+					<button type="button" class="btn btn-secondary" onclick="insert(')')">)</button>
+				</td>
+				<td><!-- 6.Button -->
+					<button type="button" class="btn btn-secondary" onclick="insert('%')">%</button>
+				</td>
+				<td><!-- 7.Button -->
+					<button type="button" class="btn btn-secondary" onclick="insert('AC')">AC</button></td>
+				</td>	
+			</tr>
+			<tr>
+				<td><!-- 8.Button -->
+					<button type="button" class="btn btn-secondary" onclick="insert('Inv')">Inv</button>
+				</td>
+				<td><!-- 9.Button -->
+					<button type="button" class="btn btn-secondary" onclick="insert('sin')">sin</button>
+				</td>
+				<td><!-- 10.Button -->
+					<button type="button" class="btn btn-secondary" onclick="insert('In')">In</button>
+				</td>
+				<td><!-- 11.Button -->
+					<button type="button" class="btn btn-secondary" onclick="insert('7')">7</button>
+				</td>
+				<td><!-- 12.Button -->
+					<button type="button" class="btn btn-secondary" onclick="insert('8')">8</button>
+				</td>
+				<td><!-- 13.Button -->
+					<button type="button" class="btn btn-secondary" onclick="insert('9')">9</button>
+				</td>
+				<td><!-- 14.Button -->
+					<button type="button" class="btn btn-secondary" onclick="insert('/')">/</button>
+				</td>			
+			</tr>
+			<tr>
+				<td><!-- 15.Button -->
+					<button type="button" class="btn btn-secondary" onclick="insert('Pi')">Pi</button>
+				</td>
+				<td><!-- 16.Button -->
+					<button type="button" class="btn btn-secondary" onclick="insert('cos')">cos</button>
+				</td>
+				<td><!-- 17.Button -->
+					<button type="button" class="btn btn-secondary" onclick="insert('log')">log</button>
+				</td>
+				<td><!-- 18.Button -->
+					<button type="button" class="btn btn-secondary" onclick="insert('4')">4</button>
+				</td>
+				<td><!-- 19.Button -->
+					<button type="button" class="btn btn-secondary" onclick="insert('5')">5</button>
+				</td>
+				<td><!-- 20.Button -->
+					<button type="button" class="btn btn-secondary" onclick="insert('6')">6</button>
+				</td>
+				<td><!-- 21.Button -->
+					<button type="button" class="btn btn-secondary" onclick="insert('*')">*</button></td>			
+				</td>	
+			</tr>
+			<tr>
+				<td><!-- 22.Button -->
+					<button type="button" class="btn btn-secondary" onclick="insert('e')">e</button>
+				</td>
+				<td><!-- 23.Button -->
+					<button type="button" class="btn btn-secondary" onclick="insert('tan')">tan</button>
+				</td>
+				<td><!-- 24.Button -->
+					<button type="button" class="btn btn-secondary" onclick="insert('Root')">Root</button>
+				</td>
+				<td><!-- 25.Button -->
+					<button type="button" class="btn btn-secondary" onclick="insert('1')">1</button>
+				</td>
+				<td><!-- 26.Button -->
+					<button type="button" class="btn btn-secondary" onclick="insert('2')">2</button>
+				</td>
+				<td><!-- 27.Button -->
+					<button type="button" class="btn btn-secondary" onclick="insert('3')">3</button>
+				</td>
+				<td><!-- 28.Button -->
+					<button type="button" class="btn btn-secondary" onclick="insert('-')">-</button>
+				</td>	
+			</tr>
+			<tr>
+				<td><!-- 29.Button -->
+					<button type="button" class="btn btn-secondary" onclick="insert('Ans')">Ans</button>
+				</td>
+				<td><!-- 30.Button -->
+					<button type="button" class="btn btn-secondary" onclick="insert('EXP')">EXP</button>
+				</td>
+				<td><!-- 31.Button -->
+					<button type="button" class="btn btn-secondary" onclick="insert('x^y')">x<sup>y</sup></button>
+				</td>
+				<td><!-- 17.Button -->
+					<button type="button" class="btn btn-secondary" onclick="insert('0')">0</button>
+				</td>
+				<td><!-- 18.Button -->
+					<button type="button" class="btn btn-secondary" onclick="insert('.')">.</button>
+				</td>
+				<td><!-- 19.Button -->
+					<button type="button" class="btn btn-primary" onclick="equal()">=</button>
+				</td>
+				<td><!-- 20.Button -->
+					<button type="button" class="btn btn-secondary" onclick="insert('+')">+</button>
+				</td>	
+			</tr>						
+		</table>
+	</div>
+</body>
+</html>
+<script>
+		function insert(num) {
+			document.getElementById('txtInput').value = document.btn.value + num;
+		}
+		function equal() {
+			document.btn.value = eval(document.btn.value);
+		}
+		function clean() {
+			// body...
+		}
+	</script>
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding: 0;
+			background: #434343;
+		}
+		.container{
+			top: 35%;
+			left: 35%;
+			position: absolute;
+			border-radius: 5px;
+			border: #000;
+		}
+		.btn{
+			width: 50px;
+			height: 50px;
+			font-size: 15px;
+			margin: 2px;
+			border-radius: 2px;
+			cursor: pointer;
+		}
+		#txtInput{
+			border: 1px solid #000;
+			width: 380px;
+			margin: 5px;
+			font-size: 25px;
+			padding: 5px;
+			text-align: right;
+		}
+	</style>
