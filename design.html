@@ -31,119 +31,134 @@
 			<input type="text" class="form-control" id="txtInput">
 		</form>
 		<table>
+
+			<!-- Row: 01 -->
+
 			<tr>
 				<td><!-- 1.Button -->
-					<button type="button" class="btn btn-secondary" onclick="insert('Rad')">Rad</button>
+					<button type="button" id="rad" class="btn btn-secondary" onclick="input('Rad')">Rad</button>
 				</td>
 				<td><!-- 2.Button -->
-					<button type="button" class="btn btn-secondary" onclick="insert('Deg')">Deg</button>
+					<button type="button" id="deg" class="btn btn-secondary" onclick="input('Deg')">Deg</button>
 				</td>
 				<td><!-- 3.Button -->
-					<button type="button" class="btn btn-secondary" onclick="insert('x!')">x!</button>
+					<button type="button" id="x!" class="btn btn-secondary" onclick="insert('x!')">x!</button>
 				</td>
 				<td><!-- 4.Button -->
-					<button type="button" class="btn btn-secondary" onclick="insert('(')">(</button>
+					<button type="button" id="plb" class="btn btn-secondary" onclick="input('(')">(</button>
 				</td>
 				<td><!-- 5.Button -->
-					<button type="button" class="btn btn-secondary" onclick="insert(')')">)</button>
+					<button type="button" id="prb" class="btn btn-secondary" onclick="input(')')">)</button>
 				</td>
 				<td><!-- 6.Button -->
-					<button type="button" class="btn btn-secondary" onclick="insert('%')">%</button>
+					<button type="button" id="per" class="btn btn-secondary" onclick="insert('%')">%</button>
 				</td>
 				<td><!-- 7.Button -->
-					<button type="button" class="btn btn-secondary" onclick="insert('AC')">AC</button></td>
+					<button type="button" class="btn btn-secondary" onclick="clean()">AC</button></td>
 				</td>	
 			</tr>
+
+			<!-- Row: 02 -->
+			
 			<tr>
 				<td><!-- 8.Button -->
-					<button type="button" class="btn btn-secondary" onclick="insert('Inv')">Inv</button>
+					<button type="button" id="inv" class="btn btn-secondary" onclick="input('Inv')">Inv</button>
 				</td>
 				<td><!-- 9.Button -->
-					<button type="button" class="btn btn-secondary" onclick="insert('sin')">sin</button>
+					<button type="button" id="sin" class="btn btn-secondary" onclick="input('sin')">sin</button>
 				</td>
 				<td><!-- 10.Button -->
-					<button type="button" class="btn btn-secondary" onclick="insert('In')">In</button>
+					<button type="button" id="in" class="btn btn-secondary" onclick="input('In')">In</button>
 				</td>
 				<td><!-- 11.Button -->
-					<button type="button" class="btn btn-secondary" onclick="insert('7')">7</button>
+					<button type="button" id="seven" class="btn btn-secondary" onclick="input('7')">7</button>
 				</td>
 				<td><!-- 12.Button -->
-					<button type="button" class="btn btn-secondary" onclick="insert('8')">8</button>
+					<button type="button" id="eight" class="btn btn-secondary" onclick="input('8')">8</button>
 				</td>
 				<td><!-- 13.Button -->
-					<button type="button" class="btn btn-secondary" onclick="insert('9')">9</button>
+					<button type="button" id="9" class="btn btn-secondary" onclick="input('9')">9</button>
 				</td>
 				<td><!-- 14.Button -->
-					<button type="button" class="btn btn-secondary" onclick="insert('%')">%</button>
+					<button type="button" id="divide" class="btn btn-secondary" onclick="insert('/')">/</button>
 				</td>			
 			</tr>
+
+			<!-- Row: 03 -->
+			
 			<tr>
 				<td><!-- 15.Button -->
-					<button type="button" class="btn btn-secondary" onclick="insert('Pi')">Pi</button>
+					<button type="button" id="pi" class="btn btn-secondary" onclick="input('Pi')">Pi</button>
 				</td>
 				<td><!-- 16.Button -->
-					<button type="button" class="btn btn-secondary" onclick="insert('cos')">cos</button>
+					<button type="button" id="cos" class="btn btn-secondary" onclick="input('cos')">cos</button>
 				</td>
 				<td><!-- 17.Button -->
-					<button type="button" class="btn btn-secondary" onclick="insert('log')">log</button>
+					<button type="button" id="lg" class="btn btn-secondary" onclick="input('log')">log</button>
 				</td>
 				<td><!-- 18.Button -->
-					<button type="button" class="btn btn-secondary" onclick="insert('4')">4</button>
+					<button type="button" id="four" class="btn btn-secondary" onclick="input('4')">4</button>
 				</td>
 				<td><!-- 19.Button -->
-					<button type="button" class="btn btn-secondary" onclick="insert('5')">5</button>
+					<button type="button" id="five" class="btn btn-secondary" onclick="input('5')">5</button>
 				</td>
 				<td><!-- 20.Button -->
-					<button type="button" class="btn btn-secondary" onclick="insert('6')">6</button>
+					<button type="button" id="six" class="btn btn-secondary" onclick="input('6')">6</button>
 				</td>
 				<td><!-- 21.Button -->
-					<button type="button" class="btn btn-secondary" onclick="insert('*')">*</button></td>			
+					<button type="button" id="multiple" class="btn btn-secondary" onclick="insert('*')">*</button></td>			
 				</td>	
 			</tr>
+
+			<!-- Row: 04 -->
+			
 			<tr>
 				<td><!-- 22.Button -->
-					<button type="button" class="btn btn-secondary" onclick="insert('e')">e</button>
+					<button type="button" id="e1" class="btn btn-secondary" onclick="input('e')">e</button>
 				</td>
 				<td><!-- 23.Button -->
-					<button type="button" class="btn btn-secondary" onclick="insert('tan')">tan</button>
+					<button type="button" id="tan" class="btn btn-secondary" onclick="input('tan')">tan</button>
 				</td>
 				<td><!-- 24.Button -->
-					<button type="button" class="btn btn-secondary" onclick="insert('R')">R<sub>t</sub></button>
+					<button type="button" id="root" class="btn btn-secondary" onclick="insert('R')">R<sub>t</sub></button>
 				</td>
 				<td><!-- 25.Button -->
-					<button type="button" class="btn btn-secondary" onclick="insert('1')">1</button>
+					<button type="button" id="one" class="btn btn-secondary" onclick="input('1')">1</button>
 				</td>
 				<td><!-- 26.Button -->
-					<button type="button" class="btn btn-secondary" onclick="insert('2')">2</button>
+					<button type="button" id="two" class="btn btn-secondary" onclick="input('2')">2</button>
 				</td>
 				<td><!-- 27.Button -->
-					<button type="button" class="btn btn-secondary" onclick="insert('3')">3</button>
+					<button type="button" id="three" class="btn btn-secondary" onclick="input('3')">3</button>
 				</td>
 				<td><!-- 28.Button -->
-					<button type="button" class="btn btn-secondary" onclick="insert('-')">-</button>
+					<button type="button" id="sub" class="btn btn-secondary" onclick="insert('-')">-</button>
 				</td>	
 			</tr>
+
+			<!-- Row: 05 -->
+			
 			<tr>
 				<td><!-- 29.Button -->
-					<button type="button" class="btn btn-secondary" onclick="insert('Ans')">Ans</button>
+					<button type="button" id="ans" class="btn btn-secondary">Ans</button>
 				</td>
 				<td><!-- 30.Button -->
-					<button type="button" class="btn btn-secondary" onclick="insert('EXP')">EXP</button>
+					<button type="button" id="exp" class="btn btn-secondary" onclick="input('EXP')">EXP</button>
 				</td>
 				<td><!-- 31.Button -->
-					<button type="button" class="btn btn-secondary" onclick="insert('x^y')">x<sup>y</sup></button>
+					<button type="button" id="square" class="btn btn-secondary" onclick="input('x^y')">x<sup>y</sup></button>
 				</td>
 				<td><!-- 17.Button -->
-					<button type="button" class="btn btn-secondary" onclick="insert('0')">0</button>
+					<button type="button" id="zero" class="btn btn-secondary" onclick="input('0')">0</button>
 				</td>
 				<td><!-- 18.Button -->
-					<button type="button" class="btn btn-secondary" onclick="insert('.')">.</button>
+					<button type="button" id="dot" class="btn btn-secondary" onclick="input('.')">.</button>
 				</td>
 				<td><!-- 19.Button -->
-					<button type="button" class="btn btn-primary" onclick="equal()">=</button>
+					<button type="button" id="eq" class="btn btn-primary" onclick="equal()">=</button>
 				</td>
 				<td><!-- 20.Button -->
-					<button type="button" class="btn btn-secondary" onclick="insert('+')">+</button>
+					<button type="button" id="plus" class="btn btn-secondary" onclick="insert('+')">+</button>
 				</td>	
 			</tr>						
 		</table>
@@ -152,13 +167,60 @@
 </html>
 <script>
 		function insert(num) {
-			document.getElementById('txtInput').value = document.btn.value + num;
+			if(num == "+"){
+			document.getElementById('txtInput').value = document.getElementById('txtInput').value + document.getElementById('plus').value + num;
+			}
+			if(num == "-"){
+			document.getElementById('txtInput').value = document.getElementById('txtInput').value + document.getElementById('plus').value + num;
+			}
+			if(num == "*"){
+			document.getElementById('txtInput').value = document.getElementById('txtInput').value + document.getElementById('plus').value + num;
+			}
+			if(num == "/"){
+			document.getElementById('txtInput').value = document.getElementById('txtInput').value + document.getElementById('plus').value + num;
+			}
+			if(num == "%"){
+			document.getElementById('txtInput').value = document.getElementById('txtInput').value + document.getElementById('plus').value + num;
+			}
+			if (num == "log") {
+				document.getElementById('txtInput') = Math.log(document.getElementById('txtInput').value + document.getElementById('lg') + num);
+			}
+			if(num == "square"){
+			document.getElementById('txtInput').value = Math.sqrt(document.getElementById('txtInput').value + document.getElementById('x^y').value + num);
+			}
+			if(num == "R"){
+			document.getElementById('txtInput').value = Math.pow(document.getElementById('txtInput').value + document.getElementById('root').value + num);
+			}
+			if(num == "sin"){
+			document.getElementById('txtInput').value = Math.sin(document.getElementById('txtInput').value + document.getElementById('sin').value + num);
+			}
+			if(num == "cos"){
+			document.getElementById('txtInput').value = Math.cos(document.getElementById('txtInput').value + document.getElementById('cos').value + num);
+			}
+			if(num == "tan"){
+			document.getElementById('txtInput').value = Math.tan(document.getElementById('txtInput').value + document.getElementById('tan').value + num);
+			}
+			if (num == "Pi") {
+				document.getElementById('pi').value = Math.PI;
+			}
+			if (num == "EXP") {
+				document.getElementById('txtInput').value = Math.exp(document.getElementById('txtInput').value + document.getElementById('exp').value + num);
+			}
+		}
+		function input(num){
+			document.getElementById('txtInput').value = document.getElementById('txtInput').value + num;
 		}
 		function equal() {
-			document.btn.value = eval(document.btn.value);
+			document.getElementById('txtInput').value = eval(document.getElementById('txtInput').value);
 		}
 		function clean() {
+			document.getElementById('txtInput').value = "";
+		}
+		function Rad() {
 			// body...
+		}
+		function log() {
+			
 		}
 	</script>
 	<style type="text/css">
